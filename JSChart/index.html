@@ -1,0 +1,172 @@
+<html>
+<head>
+
+<title>JSChart</title>
+
+<script type="text/javascript" src="../../../sources/jscharts.js"></script>
+
+</head>
+<body>
+
+<div id="graph">Loading...</div>
+
+
+<script type="text/javascript">
+	
+	var myChart = new JSChart('graph', 'line');
+	myChart.setDataArray([
+[1979,63994],
+[1981,67475],
+[1982,64780],
+[1983,66017],
+[1985,60327],
+[1986,61075],
+[1987,60738],
+[1988,61813],
+[1989,58044],
+[1990,57835],
+[1991,55714],
+[1992,55967],
+[1993,57386],
+[1994,49981],
+[1995,54366],
+[1996,54591],
+[1997,52994],
+[1998,53033],
+[1999,51414],
+[2000,53465],
+[2001,51889],
+[2002,48409],
+[2003,48997],
+[2004,47467],
+[2005,47289],
+[2006,46741],
+[2007,46791],
+[2008,46245],
+[2009,45882],
+[2010,44384]
+], 'blue');
+
+	myChart.setDataArray([
+[1977,66017],
+[1978,64780],
+[1979,66463],
+[1980,64274],
+[1981,60289],
+[1982,63236],
+[1984,58157],
+[1986,62272],
+[1987,59644],
+[1988,57202],
+[1989,59615],
+[1990,59622],
+[1991,60241],
+[1992,56953],
+[1993,55910],
+[1994,55171],
+[1995,56633],
+[1996,53345],
+[1997,52886],
+[1998,52673],
+[1999,53923],
+[2000,50567],
+[2001,51719],
+[2002,51947],
+[2003,47807],
+[2004,46400],
+[2005,49087],
+[2006,47351],
+[2007,45293],
+[2008,46607],
+[2009,44895],
+[2010,44510]
+], 'green');
+
+	myChart.setDataArray([
+[1977,63208],
+[1978,67193],
+[1979,63208],
+[1980,65709],
+[1981,67923],
+[1982,59615],
+[1983,62034],
+[1984,54858],
+[1985,61020],
+[1986,57520],
+[1987,57018],
+[1988,61701],
+[1989,55461],
+[1990,60385],
+[1991,54413],
+[1992,56179],
+[1993,51324],
+[1994,56225],
+[1995,57287],
+[1996,48844],
+[1997,52317],
+[1998,51046],
+[1999,53343],
+[2000,53340],
+[2001,51199],
+[2002,50868],
+[2003,47414],
+[2004,49413],
+[2005,47517],
+[2006,47868],
+[2007,47021],
+[2008,46630],
+[2009,46462],
+[2010,52256]
+], 'gray');
+	//myChart.setDataArray([[1, 100],[2, 55],[3, 80],[4, 115],[5, 80],[6, 70],[7, 30],[8, 130],[9, 160],[10, 170]], 'green');
+	//myChart.setDataArray([[1, 150],[2, 25],[3, 100],[4, 80],[5, 20],[6, 65],[7, 0],[8, 155],[9, 190],[10, 200]], 'gray');
+	myChart.setSize(550, 300);
+	myChart.setAxisValuesNumberY(5);
+	myChart.setIntervalStartY(40000);
+	myChart.setIntervalEndY(80000);
+	//myChart.setLabelX([2,'1980']);
+	//myChart.setLabelX([4,'1982']);
+	//myChart.setLabelX([6,'1984']);
+	//myChart.setLabelX([8,'1986']);
+	myChart.setLabelX([1,'1984']);
+	//myChart.setLabelX([12,'1990']);
+	//myChart.setLabelX([14,'1992']);
+	//myChart.setLabelX([16,'1994']);
+	//myChart.setLabelX([18,'1996']);
+	myChart.setLabelX([2,'1994']);
+	//myChart.setLabelX([22,'2000']);
+	//myChart.setLabelX([24,'2002']);
+	//myChart.setLabelX([26,'2004']);
+	//myChart.setLabelX([28,'2006']);
+	myChart.setLabelX([3,'2004']);
+	myChart.setLabelX([4,'2014']);
+	myChart.setAxisValuesNumberX(5);
+	myChart.setShowXValues(false);
+	myChart.setTitleColor('#454545');
+	myChart.setAxisValuesColor('#454545');
+	myChart.setLineColor('#A4D314', 'green');
+	myChart.setLineColor('#BBBBBB', 'gray');
+	myChart.setTooltip([1,' ']);
+	myChart.setTooltip([2,' ']);
+	myChart.setTooltip([3,' ']);
+	myChart.setTooltip([4,' ']);
+	myChart.setTooltip([5,' ']);
+	myChart.setTooltip([6,' ']);
+	myChart.setTooltip([7,' ']);
+	myChart.setTooltip([8,' ']);
+	myChart.setTooltip([9,' ']);
+	myChart.setTooltip([10,' ']);
+	myChart.setFlagColor('#9D16FC');
+	myChart.setFlagRadius(4);
+	myChart.setAxisPaddingRight(100);
+	myChart.setLegendShow(true);
+	myChart.setLegendPosition(490, 80);
+	myChart.setLegendForLine('blue', '1-5 Teacher');
+	myChart.setLegendForLine('green', '6-8 Teacher');
+	myChart.setLegendForLine('gray', '9-12 Teacher');
+	myChart.draw();
+	
+</script>
+
+</body>
+</html>
